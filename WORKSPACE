@@ -191,13 +191,13 @@ http_archive(
 new_local_repository(
     name = "linux_opencv",
     build_file = "@//third_party:opencv_linux.BUILD",
-    path = "/usr",
+    path = "/lustre/ahome3/g/gv53/miniconda3/",
 )
 
 new_local_repository(
     name = "linux_ffmpeg",
     build_file = "@//third_party:ffmpeg_linux.BUILD",
-    path = "/usr"
+    path = "/lustre/ahome3/g/gv53/miniconda3/"
 )
 
 new_local_repository(

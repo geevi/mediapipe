@@ -42,6 +42,15 @@ cc_binary(
     ],
 )
 
+
+cc_binary(
+    name = "iris_tracking_cpu_video_input_copy",
+    deps = [
+        "//mediapipe/examples/desktop:simple_run_graph_main_copy",
+        "//mediapipe/graphs/iris_tracking:iris_tracking_cpu_video_input_deps",
+    ],
+)
+
 cc_binary(
     name = "iris_tracking_cpu",
     deps = [

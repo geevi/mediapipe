@@ -34,6 +34,25 @@ cc_library(
     ],
 )
 
+
+cc_library(
+    name = "simple_run_graph_main_copy",
+    srcs = ["simple_run_graph_main_copy.cc"],
+    deps = [
+        "//mediapipe/framework:calculator_framework",
+        "//mediapipe/framework/port:commandlineflags",
+        "//mediapipe/framework/port:file_helpers",
+        "//mediapipe/framework/port:map_util",
+        "//mediapipe/framework/port:parse_text_proto",
+        "//mediapipe/framework/port:ret_check",
+        "//mediapipe/framework/port:status",
+        "//mediapipe/framework/port:statusor",
+        "@com_google_absl//absl/strings",
+        "//mediapipe/framework/formats:landmark_cc_proto",
+        "//mediapipe/framework/formats:rect_cc_proto",
+    ],
+)
+
 cc_library(
     name = "demo_run_graph_main",
     srcs = ["demo_run_graph_main.cc"],

@@ -9,9 +9,10 @@ build --define='absl=1'
 build --enable_platform_specific_config
 
 # Linux
-build:linux --cxxopt=-std=c++14
+build:linux --cxxopt=-std=c++14 
 build:linux --host_cxxopt=-std=c++14
 build:linux --copt=-w
+build:linux --linkopt=-lrt
 
 # windows
 build:windows --cxxopt=/std:c++14
